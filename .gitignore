@@ -1,0 +1,16 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+
+# venv
+venv/
+
+# Distribution
+*.egg-info/
+build/
+dist/
+
+# Lint
+.mypy_cache
+
+# Test
+.pytest_cache
