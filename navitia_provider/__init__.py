@@ -1,15 +1,15 @@
-__version__ = "1.1.4"
+__version__ = "0.1.2"
 
 ## This is needed to allow Airflow to pick up specific metadata fields it needs for certain features.
 def get_provider_info():
     return {
-        "package-name": "airflow-providers-lokalise",  # Required
-        "name": "Lokalise",  # Required
-        "description": "Lokalise hook and operator for Airflow based on the Lokalise Python SDK.",  # Required
+        "package-name": "airflow-providers-navitia",  # Required
+        "name": "Navitia",  # Required
+        "description": "Navitia hook and operator for Airflow based on the Navitia Python unofficial SDK.",  # Required
         "connection-types": [
             {
-                "connection-type": "lokalise",
-                "hook-class-name": "lokalise_provider.hooks.lokalise.LokaliseHook",
+                "connection-type": "navitia",
+                "hook-class-name": "navitia_provider.hooks.navitia.NavitiaHook",
             }
         ],
         "versions": [__version__],  # Required
